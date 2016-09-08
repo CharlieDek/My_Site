@@ -681,7 +681,7 @@ mark {
 
 .options{
   position: fixed;
-  left: 10%;
+  left: 9%;
   top: 61%;
   z-index: 10;
 }
@@ -1240,7 +1240,7 @@ mark {
   transition:all .8s ease;
   border: 8px solid black;
 /*  border-radius: 80%;*/
-  animation: jello 1.3s linear infinite;
+  animation: jello 2s linear infinite;
   animation-play-state: paused; 
   z-index: 8;
 }

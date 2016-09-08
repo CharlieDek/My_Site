@@ -2,7 +2,7 @@ var prevH = 0;
 var prevW = 0;
 
 var heightSwitch = 640;
-var widthSwitch = 730;
+var widthSwitch = 600;
 
 //if about Image is 0, nothing. If it is 1, jelly is showing. If it is 2, photo is showing.
 var aboutImage = 0;
