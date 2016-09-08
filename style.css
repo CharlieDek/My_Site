@@ -41,7 +41,6 @@
             left: 81.5%;
             top: 10%;              
 
-/*            box-shadow: .001px 3px #000067;*/
             
 
 
@@ -54,55 +53,39 @@
 }
 
 ::selection {
-  /*TODO #b3f9e9 */
 
-  background: #b3f9e9; /* WebKit/Blink Browsers */
+  background: #b3f9e9;
 }
 ::-moz-selection {
-  background: #b3f9e9; /* Gecko Browsers */
+  background: #b3f9e9; 
 }
 
 .content_3{
   font-family: 'Open Sans', sans-serif;
   padding-left: 35px;
+  font-size: 115%;
   padding-right: 35px;
-  /*
-  margin-left: 35px;
-  margin-right: 35px;*/
   position: fixed;
-  left: 9%;
+  left: 5.5%;
   top: 34.5%;
   color: black;  
   font-weight: lighter;
-  width: 320px;
+  width: 380px;
 
 }
 
 
 .aboutHome:hover, .aboutHome:focus{
   border-radius: 40%;
-/* TODO: copy for links;
-  color: white;
-  -moz-box-shadow: inset 0 -2.4em 0 #000067;
-  -webkit-box-shadow: inset 0 -2.4em 0 #000067;
-  box-shadow: inset 0 -2.4em 0 #000067;
-  -moz-transition-duration: 500ms;
-  -o-transition-duration: 500ms;
-  -webkit-transition-duration: 500ms;
-  transition-duration: 500ms;
-  */
-
 }
 
 .videoBig{
   width: 315px;
+  position: fixed;
+  font-size: 780%;
+  top: -13%;
   color: white;
   transition: all 1.6s ease;
-}
-
-.videoBig:hover{
-/*  background-color: #EBC500;
-  color: black;*/
 }
 
 .mouth{
@@ -143,7 +126,7 @@ body{
 .content_2{
   position: fixed;
   left: 9.8%;
-  top: 34.5%;
+  top: 32.5%;
   color: black;
   font-size: 140%;
 }
@@ -199,7 +182,7 @@ body{
             background:#676470;
             border-bottom: 4px solid #EBC500;
             background-color: black;
-            font-size: 150%;
+            font-size: 140%;
             color: white;
             text-decoration: none;
    
@@ -241,8 +224,8 @@ body{
 .content_1{
   position: fixed;
   left: 9%;
-  top: 34.5%;
-  font-size: 140%;
+  top: 34%;
+  font-size: 150%;
   transition:all .9s ease;
 }
 
@@ -274,19 +257,16 @@ body{
   position: absolute;
   top: 0;
   left: 0;  
-  /*TODO */
   z-index: 7;  
 }
 
 
 .cover3{
-/*  background-color: #EBC500;  */
   background-color: white;  width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;  
-  /*TODO */
   z-index: 0;
 }
 
@@ -298,13 +278,6 @@ h5{
   width: 540px;
   z-index: 1;
   transition:all .7s ease;
-}
-
-.writingBig:hover{
-  /*
-  background-color: black;
-  color: #EBC500;
-  */
 }
 
 .speckle{
@@ -496,12 +469,6 @@ body {
   width: 340px;
 }
 
-.aboutBig:hover, .aboutBig:focus{
-/*  background-color: #b3f9e9;
-  color: white;
-  background-color: black;*/
-
-}
 
 .top{
   position: absolute;
@@ -573,13 +540,13 @@ button{
 
 .b{
 
-            width:98.5px;
-            height:52px;
+            width:105.5px;
+            height:55px;
             background:#676470;
             transition:all .7s ease;
             background-color: white;
             border: none;
-            font-size: 130%;
+            font-size: 140%;
             box-shadow: 4px 8.5px 8.5px #000067;
             cursor: pointer;
 
@@ -609,6 +576,7 @@ button{
 
 td {
     padding: 15px;
+    padding-top: 24px;
     text-align: center;
 }
 
@@ -691,11 +659,10 @@ mark {
 
 .options{
   position: fixed;
-  left: 8%;
+  left: 10%;
   top: 61%;
   z-index: 10;
 }
-
 
 
 .hit-the-floor {
@@ -705,7 +672,7 @@ mark {
 
   left: 7.3%;
   top:53%;
-  font-size: 3.3em;m
+  font-size: 3.7em;m
   font-weight: bold;
 
 
@@ -918,7 +885,7 @@ mark {
 }
 
 
-.eleph_box{
+.hands_box{
 
   position: fixed;  
   left: 63%;
@@ -931,7 +898,7 @@ mark {
 }
 
 
-.eleph{
+.hands{
   /*position: fixed;*/
   position: relative;
   left: 3.3%;
@@ -943,16 +910,16 @@ mark {
   top: 44%;*/
   z-index: 2;
 }
-.eleph:hover{
+.hands:hover{
 }
 
 .jelly{
   position: fixed;
-  width: 500px;
-  height: 450px;
+  width: 505px;
+  height: 455px;
   transition:all .8s ease;
   left: 46%;
-  top: 17%;
+  top: 20%;
   border-radius: 80%;
   z-index: 8;
 }
@@ -1121,18 +1088,6 @@ mark {
   text-align: center;
 }
 
-/*.smallerContentWriting{
-  all: unset;  
-  z-index: -2;
-  display: block;
-  margin: auto;
-  width: 200px;
-  font-size: 120%;
-  border: none;
-  border-bottom: 4px solid #EBC500;
-  text-align: center;
-}*/
-
 .smallerContentWriting{
   all: unset;  
   width: 200px;
@@ -1155,13 +1110,11 @@ mark {
   font-size: 140%;
   transition:all .9s ease;  
   width: 100px;
-
-/*  left: 23%;
-  top: 20%;*/
 }
 
 .writingBig{
-  top: -23%;  
+  top: -23%; 
+  font-size: 650%; 
 }
 
 .content_3_small{
@@ -1170,8 +1123,7 @@ mark {
   display: block;
   padding-left: 30px;
   padding-right: 30px;
-/*  margin-left: 30px;
-  margin-right: 30px;*/
+
   top: 22.5%;
   align: center;
   margin: auto;
@@ -1188,8 +1140,7 @@ mark {
 }
 
 .smallJelly{
-/*  all:unset;*/
-/*  display: block;*/
+
   left: 5px;
   top: -38px;
   width: 450px;
@@ -1199,15 +1150,6 @@ mark {
   z-index: 8;  
 }
 
-.smallContactDiv{
-  /*all: unset;
-  display: block;
-  margin: auto;
-  align: center;
-  text-align: center;  
-
-  top: 75%;*/
-}
 
 .writingSmall{
   all: unset;
@@ -1253,7 +1195,7 @@ mark {
 
 .tdSmall{
   padding: 8px;
-  padding-top: 6.5px;
+  padding-top: 11.5px;
 }
 
 .markySmall{

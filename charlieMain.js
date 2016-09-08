@@ -30,7 +30,7 @@ function toggleSmall(){
     $(".videoBig").css("display", "block");
 
   //writing
-    $('.eleph_box').addClass('smallHandBox');
+    $('.hands_box').addClass('smallHandBox');
     $('.aYellow').addClass('smallerContent');
     $('.content_2').addClass('smallerContentWriting')
     $('.aYellow').addClass('smallerContentWriting');
@@ -72,7 +72,7 @@ function toggleBig(){
     //here
 
   //writing
-    $('.eleph_box').removeClass('smallHandBox');
+    $('.hands_box').removeClass('smallHandBox');
     $('.aYellow').removeClass('smallerContent');
     $('.content_2').removeClass('smallerContentWriting')
     $('.aYellow').removeClass('smallerContentWriting');
@@ -145,9 +145,9 @@ $('.jellyButton').click(function() {
 
 $("#b4").click(function() {
   $('.bg').toggleClass('hidden');
-  $('.eleph').toggleClass('hidden');
-  $('.eleph_box').toggleClass('hidden');  
-  $('.eleph_cover').toggleClass('hidden');  
+  $('.hands').toggleClass('hidden');
+  $('.hands_box').toggleClass('hidden');  
+  $('.hands_cover').toggleClass('hidden');  
   $(".options").css("z-index", 2);
 
   $('.content_2').toggleClass('hidden'); 
@@ -233,9 +233,9 @@ function transition2a(){
     $(".aYellow").css("display", "inline");   
   }
   $("#b4").toggleClass('hidden');
-  $('.eleph').toggleClass('hidden');
-  $('.eleph_box').toggleClass('hidden');
-  $('.eleph_cover').toggleClass('hidden');  
+  $('.hands').toggleClass('hidden');
+  $('.hands_box').toggleClass('hidden');
+  $('.hands_cover').toggleClass('hidden');  
   $('.content_2').toggleClass('hidden');  
 }
 
