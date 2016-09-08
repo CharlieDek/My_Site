@@ -4,6 +4,9 @@ var prevW = 0;
 var heightSwitch = 640;
 var widthSwitch = 730;
 
+//if about Image is 0, nothing. If it is 1, jelly is showing. If it is 2, photo is showing.
+var aboutImage = 0;
+
 function isSmall(){
   if (widthSwitch > prevW){
     return true;
@@ -46,6 +49,7 @@ function toggleSmall(){
     $('.contactDiv').addClass('smallContactDiv');
     $('.aboutBig').addClass('aboutSmall');
     $(".jelly").addClass('smallJelly'); 
+    $(".charlieButton").css('display', 'none');
 
   //other
     $(".onlyBig").css("display", "none");
@@ -89,6 +93,8 @@ function toggleBig(){
     $('.contactDiv').removeClass('smallContactDiv');
     $('.aboutBig').removeClass('aboutSmall');
     $(".jelly").removeClass('smallJelly');  
+    $(".charlieButton").css('display', 'inline');
+
 
   //other
     $(".onlyBig").css("display", "inline");
@@ -136,8 +142,40 @@ $(window).on('resize', function(e){
 
 
 
+function toJelly(){
+  if (aboutImage == 2 || aboutImage == 0){
+    aboutImage = 1;
+  } else{
+    aboutImage = 0;
+  }
+}
+
+function toCharlie(){
+  if (aboutImage == 1 || aboutImage == 0) {
+    aboutImage = 2;
+  } else {
+    aboutImage = 0
+  }
+}
+
 $('.jellyButton').click(function() {
+  if (aboutImage == 2){
+    $('.charlie_photo').toggleClass('hidden2');
+    window.setTimeout(toJelly, 900);
+  } else{
+    toJelly();
+  }
   $('.jelly').toggleClass('hidden2');
+});
+
+$('.charlieButton').click(function() {
+  if (aboutImage == 1){
+    $('.jelly').toggleClass('hidden2');
+    window.setTimeout(toCharlie, 900);
+  }else{
+    toCharlie();
+  }
+  $('.charlie_photo').toggleClass('hidden2');
 });
 
 
@@ -246,15 +284,18 @@ function whiteEnter(){
     $(".videoBig").css("display", "block");
     $(".contactDiv").css("display", "block");
     $(".jelly").css("display", "block");
+
   } else {
     $(".aboutBig").css("display", "inline");
     $(".videoBig").css("display", "inline");
     $(".content_3").css("display", "inline");
     $(".contactDiv").css("display", "inline");
     $(".jelly").css("display", "inline");
+    $(".charlie_photo").css("display", "inline");
 
   }  
   $('.jelly').toggleClass('hidden');
+  $('.charlie_photo').toggleClass('hidden');
   $('.content_3').toggleClass('hidden');
   $('.jellyButton').toggleClass('hidden');
   $('.contactDiv').toggleClass('hidden');
@@ -294,6 +335,7 @@ function whiteExitb(){
     $(".content_3").css("display", "none");
     $(".contactDiv").css("display", "none");
     $(".jelly").css("display", "none");
+    $(".charlie_photo").css("display", "none");
 }
 
 function whiteExit(){
@@ -316,6 +358,7 @@ $(".aboutHome").click(function() {
 
   $('.contactDiv').toggleClass('hidden');
   $('.jelly').toggleClass('hidden');
+  $('.charlie_photo').toggleClass('hidden');
   $('.content_3').toggleClass('hidden');
 
   $('.jellyButton').toggleClass('hidden');     

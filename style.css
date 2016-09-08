@@ -53,11 +53,12 @@
 }
 
 ::selection {
-
-  background: #b3f9e9;
+  color: white;
+  background: #ef5300;
 }
 ::-moz-selection {
-  background: #b3f9e9; 
+  color: white;
+  background: #ef5300; 
 }
 
 .content_3{
@@ -288,6 +289,27 @@ h5{
   left: 0;  
   z-index: 2;
   opacity: 1;
+}
+
+.charlieButton{
+
+  border-radius: 5%;
+  background-color: white;
+  font-size: 90%;
+  border: none;
+  cursor: pointer;  
+  color: black;
+  border: 1px solid black;
+  padding-top: 10px;
+  padding-right: 8.5px;
+  padding-bottom: 10px;
+  padding-left: 8.5px;    
+  transition:all .9s ease;  
+}
+
+.charlieButton:hover{
+  color: white;
+  background-color: black;
 }
 
 .jellyButton{
@@ -1209,5 +1231,25 @@ mark {
   font-size: 65%;
 }
 
+.charlie_photo{
+  position: fixed;
+  width: 380px;
+  height: 415px;
+  left: 53%;
+  top: 21.5%;
+  transition:all .8s ease;
+  border: 8px solid black;
+/*  border-radius: 80%;*/
+  animation: jello 1.3s linear infinite;
+  animation-play-state: paused; 
+  z-index: 8;
+}
 
+.charlie_photo:hover{
+    -webkit-transform: scale (1.2, 1.0);
+    -ms-transform: scale (1.2, 1.0) ;
+    transform: scale(1.2, 1.0);  
+    animation-play-state: running;
+
+}
 
