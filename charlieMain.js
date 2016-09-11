@@ -102,7 +102,6 @@ function toggleBig(){
 }
 
 
-//TODO: make more intelligent than toggle! 
 function shouldSwitch(w, h, prevW, prevH){
 
   if (prevW < widthSwitch && w > widthSwitch){
