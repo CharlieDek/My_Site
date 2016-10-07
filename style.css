@@ -1048,9 +1048,9 @@ mark {
 
 
 .smallHomeButtons{
-            width:70.5px;
-            height:40px;
-            font-size: 110%;
+            width:60.5px;
+            height:34px;
+            font-size: 102%;
             background: white;
             box-shadow: 2px 4.5px 4.5px #000067;
             cursor: pointer;
@@ -1229,7 +1229,7 @@ mark {
   margin: auto;
   text-align: center;
   font-weight: bold;  
-  font-size: 60%;
+  font-size: 55%;
 }
 
 
