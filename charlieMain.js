@@ -13,6 +13,10 @@ function isSmall(){
   }
 }
 
+var audioContent = document.getElementsByTagName("audio")[0];
+var audioHome = document.getElementsByTagName("audio")[1];
+var audioJelly = document.getElementsByTagName("audio")[2];
+
 function toggleSmall(){
   //Home
     $('#homeButtons').addClass('homeButtonSpacing');  
@@ -157,7 +161,41 @@ function toCharlie(){
   }
 }
 
+$('.yel').mouseenter(function(){
+  audioContent.play();
+})
+
+$('.aYellow').mouseenter(function(){
+  audioContent.play();
+})
+
+$('#to_video').mouseenter(function(){
+  audioHome.play();
+})
+
+$('#to_writing').mouseenter(function(){
+  audioHome.play();
+})
+
+$('#to_about').mouseenter(function(){
+  audioHome.play();
+})
+
+$('.videoHome').mouseenter(function(){
+  audioHome.play();
+})
+
+$('.aboutHome').mouseenter(function(){
+  audioHome.play();
+})
+
+$('.home_writing').mouseenter(function(){
+  audioHome.play();
+})
+
 $('.jellyButton').click(function() {
+  audioJelly.play();
+
   if (aboutImage == 2){
     $('.charlie_photo').toggleClass('hidden2');
     window.setTimeout(toJelly, 900);
@@ -180,7 +218,7 @@ $('.charlieButton').click(function() {
 
 
 
-$("#b4").click(function() {
+$("#writing_home").click(function() {
   $('.bg').toggleClass('hidden');
   $('.hands').toggleClass('hidden');
   $('.hands_box').toggleClass('hidden');  
@@ -188,27 +226,36 @@ $("#b4").click(function() {
   $(".options").css("z-index", 2);
 
   $('.content_2').toggleClass('hidden'); 
-  $("#b4").toggleClass('hidden');
+  $("#writing_home").toggleClass('hidden');
 //  $("#writingBig").toggleClass('hidden');
-  window.setTimeout(comeBack, 1000);
+  window.setTimeout(yellow_exit2, 500);
 
 });
 
-function comeBack(){
-  $("#to_about").toggleClass('bounceOutLeft');
-  $("#to_writing").toggleClass('bounceOutLeft');
-  $("#to_video").toggleClass('bounceOutLeft');
-  $(".hit-the-floor").toggleClass('bounceOutLeft') 
+function yellow_exit3(){
   $(".content_2").css("display", "none");
   $(".aYellow").css("display", "none");
   $('.options2').css('display', 'none');
-  
+}
+
+
+function yellow_exit2(){
+  $("#to_about").toggleClass('bounceOutLeft');
+  $("#to_writing").toggleClass('bounceOutLeft');
+  $("#to_video").toggleClass('bounceOutLeft');
+  $(".hit-the-floor").toggleClass('bounceOutLeft');
+  window.setTimeout(yellow_exit3, 200);
 
 }
 
 
 
 $("#to_video").click(function() {
+
+
+  $('.slider').toggleClass('closed');
+
+
   $('.videoHome').toggleClass('hidden');
   $(".options").css("z-index", -2);
   $(".balls").css("display", "inline");
@@ -221,11 +268,13 @@ $("#to_video").click(function() {
     $(".aYellow").css("display", "inline");
     $(".videoBig").css("display", "inline");
   }
+  $(".y1").css("display", "inline");
+  $(".y2").css("display", "inline");
+  $(".y3").css("display", "inline");
 
   $('.y1').toggleClass('hidden');
   $('.y2').toggleClass('hidden');
   $('.y3').toggleClass('hidden');
-  $('.slider').toggleClass('closed');
 
 //  	$('.bg').toggleClass('bg-active-one');
 //  	window.setTimeout(partB, 2001);
@@ -237,9 +286,15 @@ $(".videoHome").click(function() {
   $('.slider').toggleClass('closed');
   $('.videoHome').toggleClass('hidden');
   $('.y1').toggleClass('hidden');
+  $(".y1").css("display", "none");
+
   $(".options").css("z-index", 5);
   $('.y2').toggleClass('hidden');
+  $(".y2").css("display", "none");
+
   $('.y3').toggleClass('hidden');  
+  $(".y3").css("display", "none");
+
   $(".balls").css("display", "none");
   $(".videoBig").css("display", "none");  
 });
@@ -258,7 +313,7 @@ $("#to_writing").click(function() {
   $('#to_writing').toggleClass('bounceOutLeft');
   $('#to_about').toggleClass('bounceOutLeft');
   $(".hit-the-floor").toggleClass('bounceOutLeft')  
-  window.setTimeout(transition2a, 1401);
+  window.setTimeout(transition2a, 450);
 });
 
 function transition2a(){
@@ -269,7 +324,7 @@ function transition2a(){
     $(".content_2").css("display", "inline");
     $(".aYellow").css("display", "inline");   
   }
-  $("#b4").toggleClass('hidden');
+  $("#writing_home").toggleClass('hidden');
   $('.hands').toggleClass('hidden');
   $('.hands_box').toggleClass('hidden');
   $('.hands_cover').toggleClass('hidden');  
