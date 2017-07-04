@@ -84,7 +84,7 @@
   width: 315px;
   position: fixed;
   font-size: 780%;
-  top: -13%;
+  top: -15%;
   color: white;
   transition: all 1.6s ease;
 }
@@ -293,53 +293,35 @@ h5{
   opacity: 1;
 }
 
-.charlieButton{
-
-  border-radius: 5%;
-  background-color: white;
-  font-size: 90%;
-  border: none;
-  cursor: pointer;  
+#charlieButton{
   color: black;
-  border: 1px solid black;
-  padding-top: 8.5px;
-  padding-right: 8.5px;
-  padding-bottom: 10px;
-  padding-left: 8.5px;    
+  font-family: "Montserrat";  
+  background-color: white;
+  font-weight: normal;  
 }
 
-.charlieButton:hover{
-  color: white;
+#charlieButton:hover{
   background-color: black;
+  color: white;
 }
 
-.jellyButton{
-
-  border-radius: 5%;
-
-  transition:all .7s ease;
-  background-color: white;
-  border: none;
-  font-size: 90%;
-  cursor: pointer;  
+#jellyButton{
   color: black;
-  border: 1px solid black;
-  padding-top: 8.5px;
-  padding-right: 8.5px;
-  padding-bottom: 8.5px;
-  padding-left: 8.5px;    
+  font-family: "Montserrat";
+  border-radius: 5%;
+  background-color: white;
+  font-weight: normal;
   animation: jello 1.3s linear infinite;
   animation-play-state: paused; 
 }
 
-.jellyButton:hover{
+#jellyButton:hover{
   color: white;
   background-color: #FF00CC;
   animation-play-state: running;
   cursor: pointer;
   border-color: #00ff33;
   border-width: 1.7px;
-
   }
 
   22.2% {
@@ -500,6 +482,7 @@ body {
 }
 
 .pContact{
+/*  font-weight: bold;*/
   text-decoration: none;
   color: black;
   font-size: 90%;
@@ -514,7 +497,6 @@ body {
 .pContact:hover, .pContact:focus{
   background-color: black;
   color: white;
- 
 }
 
 .bg-active-three{
@@ -1232,11 +1214,10 @@ mark {
   font-size: 55%;
 }
 
-
 .charlie_photo{
   position: fixed;
-  width: 380px;
-  height: 415px;
+  width: 400px;
+  height: 400px;
   left: 53%;
   top: 21.5%;
   transition:all .8s ease;
@@ -1252,6 +1233,37 @@ mark {
     -ms-transform: scale (1.2, 1.0) ;
     transform: scale(1.2, 1.0);  
     animation-play-state: running;
-
 }
+
+
+
+
+
+
+
+
+
+
+@import "compass/css3";
+
+
+body{
+  background: black;
+}
+
+svg{
+  width: 600px;
+  height: 120px;
+  display: block;
+  position: relative;
+  overflow: hidden; 
+  margin: 0 auto;
+  background: black;
+}
+
+
+
+
+
+
 

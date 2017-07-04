@@ -49,11 +49,11 @@ function toggleSmall(){
     $('.options2').css('display', 'none');
     $('.content_3').addClass('content_3_small');
     $('.pContact').addClass('smallContact');
-    $('.jellyButton').addClass('smallContact');
+    $('#jellyButton').addClass('smallContact');
     $('.contactDiv').addClass('smallContactDiv');
     $('.aboutBig').addClass('aboutSmall');
     $(".jelly").addClass('smallJelly'); 
-    $(".charlieButton").css('display', 'none');
+    $("#charlieButton").css('display', 'none');
 
   //other
     $(".onlyBig").css("display", "none");
@@ -93,11 +93,11 @@ function toggleBig(){
     $('.options2').css('display', 'inline');
     $('.content_3').removeClass('content_3_small');
     $('.pContact').removeClass('smallContact');
-    $('.jellyButton').removeClass('smallContact');
+    $('#jellyButton').removeClass('smallContact');
     $('.contactDiv').removeClass('smallContactDiv');
     $('.aboutBig').removeClass('aboutSmall');
     $(".jelly").removeClass('smallJelly');  
-    $(".charlieButton").css('display', 'inline');
+    $("#charlieButton").css('display', 'inline');
 
 
   //other
@@ -193,7 +193,7 @@ $('.home_writing').mouseenter(function(){
   audioHome.play();
 })
 
-$('.jellyButton').click(function() {
+$('#jellyButton').click(function() {
   audioJelly.play();
 
   if (aboutImage == 2){
@@ -205,7 +205,7 @@ $('.jellyButton').click(function() {
   $('.jelly').toggleClass('hidden2');
 });
 
-$('.charlieButton').click(function() {
+$('#charlieButton').click(function() {
   if (aboutImage == 1){
     $('.jelly').toggleClass('hidden2');
     window.setTimeout(toCharlie, 900);
@@ -351,10 +351,11 @@ function whiteEnter(){
   $('.jelly').toggleClass('hidden');
   $('.charlie_photo').toggleClass('hidden');
   $('.content_3').toggleClass('hidden');
-  $('.jellyButton').toggleClass('hidden');
+  $('#jellyButton').toggleClass('hidden');
   $('.contactDiv').toggleClass('hidden');
   $(".aboutHome").toggleClass('hidden');
-
+  //new
+  $(".videoBig").css("display", "none");
 
 }
 
@@ -385,7 +386,6 @@ $("#to_about").click(function() {
 function whiteExitb(){
     $(".cover2").toggleClass('hiddenFast');
     $(".aboutBig").css("display", "none");
-    $(".videoBig").css("display", "none");
     $(".content_3").css("display", "none");
     $(".contactDiv").css("display", "none");
     $(".jelly").css("display", "none");
@@ -398,7 +398,7 @@ function whiteExit(){
   $("#to_writing").toggleClass('bounceOutLeft');
   $("#to_about").toggleClass('bounceOutLeft');
   $(".hit-the-floor").toggleClass('bounceOutLeft')  
-  window.setTimeout(whiteExitb, 900);
+  window.setTimeout(whiteExitb, 850);
 }
 
 $(".aboutHome").click(function() {
@@ -415,12 +415,12 @@ $(".aboutHome").click(function() {
   $('.charlie_photo').toggleClass('hidden');
   $('.content_3').toggleClass('hidden');
 
-  $('.jellyButton').toggleClass('hidden');     
+  $('#jellyButton').toggleClass('hidden');     
 
   //todo other button brings these all back nice
 
 
-  window.setTimeout(whiteExit, 1501);
+  window.setTimeout(whiteExit, 800);
 
 
 
