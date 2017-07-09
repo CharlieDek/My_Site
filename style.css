@@ -36,14 +36,7 @@
             font-size: 130%;
             cursor: pointer;  
             color: black;
-            box-shadow: 3px 4.5px 4.5px #000067;
-            position: fixed;
-            left: 81.5%;
-            top: 10%;              
-
-            
-
-
+            box-shadow: 3px 4.5px 4.5px #000067;             
 }
 
 .contactDiv{
@@ -99,9 +92,6 @@
 }
 
 .videoHome{
-  position: fixed;
-  left: 81.5%;
-  top: 10%;  
   font-size: 130%;
   width:98.5px;
   height:52px;
@@ -556,12 +546,15 @@ button{
 
 }
 
+.homes{
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    width:110px;
+    height:58px;
+}
+
 .home_writing{
-            position: fixed;
-            left: 81.5%;
-            top: 10%;
-            width:110px;
-            height:58px;
             background:#676470;
             transition:all .9s ease;
             background-color: black;
@@ -879,12 +872,12 @@ mark {
 
 .balls{
   position: fixed;
-  width: 400px;
-  height: 400px;
+  width: 450px;
+  height: 450px;
   transition:all .7s ease;
-  left: 55%;
+  right: 30px;
   border-radius: 100%;
-  top: 37%;
+  bottom: 30px;
   z-index: 1;
 }
 
