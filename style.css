@@ -68,7 +68,6 @@
 
 }
 
-
 .aboutHome:hover, .aboutHome:focus{
   border-radius: 40%;
 }
@@ -914,7 +913,7 @@ mark {
   position: fixed;
   width: 505px;
   height: 455px;
-  transition:all .8s ease;
+  transition:all 1.5s ease;
   left: 46%;
   top: 20%;
   border-radius: 80%;
@@ -923,9 +922,10 @@ mark {
 
 .jelly:hover, .jelly:focus{
 
-        -webkit-transform: scale (1.2) rotateZ(-360deg);
-        -ms-transform: scale (1.2) rotateZ(-360deg);
-        transform: scale(1.2) rotateZ(-360deg);   
+        -webkit-transform: scale (1.25) rotateZ(-360deg);
+        -ms-transform: scale (1.25) rotateZ(-360deg);
+        transform: scale(1.25) rotateZ(-360deg);
+
 }
 
 
